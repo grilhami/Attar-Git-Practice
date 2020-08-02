@@ -3,15 +3,23 @@
 
 # 5
 
-n = input("Input jumlah: ")
-x = int(n)-1
-arr = [x]
+n = input() #5
+n = int(n)
+isi = input() #2 3 6 6 5 7 6 4
+isi = isi.split()
+isi = isi[:n] # 2 3 6 6 5
 
-i=0
-while(i <= x):
-    arr[i] = input("Input angka array: ")
-    arr[i] = int(arr[i])
-    i+=1
+x = 0
+for i in isi:
+    i = int(i)
+    isi[x] = i
+    x+=1
 
-arr2 = arr.sort()
-print(arr2)
+setIsi = set(isi)
+isi = list(setIsi)
+isi.sort() 
+isi.reverse()
+print(isi[1])
+
+# jawab = list(setIsi)
+# print(jawab)

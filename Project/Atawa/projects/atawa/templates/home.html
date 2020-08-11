@@ -1,0 +1,14 @@
+{% extends 'leBase.html' %}
+
+{% block content %}
+<h1>Hello Mr {{name}}</h1>
+
+    <form action="adding">
+        <label>Angka Pertama:</label><br>
+        <input type="text" name="angka1"><br>
+        <label>Angka Kedua:</label><br>
+        <input type="text" name="angka2"><br><br>
+        <input type="submit">
+    </form> 
+  
+{% endblock %}

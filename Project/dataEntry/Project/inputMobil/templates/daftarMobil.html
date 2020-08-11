@@ -1,0 +1,20 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mobil</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <a href="/tambahMobil">Tambah Mobil Disini!</a>
+    {% for mob in mobil %}
+    <h3>{{mob.merk}}</h3>
+        <li>{{ mob.nama }}</li>
+        <li>{{ mob.tahun }}</li>
+        <li>$ {{ mob.harga }}</li>
+    {% endfor %}
+
+</body>
+</html>
